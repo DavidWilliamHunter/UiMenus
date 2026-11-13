@@ -1,0 +1,142 @@
+/* UI Menus defaults for UI Toolkit. ToolkitMenus adds this sheet to each menu it opens.
+   Rows are cards in a vertical UI Frames strip (.um-page); override anything in your own sheets. */
+
+.um-menu {
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 12px;
+    background-color: rgba(24, 26, 32, 0.94);
+    color: rgb(230, 232, 238);
+}
+
+.um-title {
+    font-size: 20px;
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.um-page {
+    --uf-axis: vertical;
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow: hidden;
+}
+
+.um-page > .uf-cards {
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.um-row {
+    padding: 2px 8px;
+    border-radius: 4px;
+    border-left-width: 3px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.um-row.uf-selected {
+    background-color: rgba(80, 140, 255, 0.28);
+    border-color: rgb(110, 165, 255);
+}
+
+.um-row.uf-entered {
+    background-color: rgba(80, 140, 255, 0.16);
+}
+
+.um-row__heading {
+    -unity-font-style: bold;
+    margin-top: 10px;
+    color: rgb(160, 170, 190);
+}
+
+.um-row__line {
+    flex-direction: row;
+    align-items: center;
+    min-height: 32px;
+}
+
+.um-row__label {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.um-row--dirty .um-row__label {
+    -unity-font-style: italic;
+}
+
+
+.um-row__control {
+    flex-grow: 1.4;
+    flex-basis: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.um-row__control > Slider,
+.um-row__control > SliderInt,
+.um-row__control > TextField,
+.um-row__control > IntegerField,
+.um-row__control > DoubleField {
+    flex-grow: 1;
+}
+
+.um-row__value {
+    min-width: 56px;
+    -unity-text-align: middle-right;
+}
+
+.um-choice__value {
+    min-width: 120px;
+    -unity-text-align: middle-center;
+}
+
+.um-row--button .um-row__control,
+.um-row--link .um-row__control {
+    justify-content: flex-start;
+}
+
+.um-confirm Button {
+    background-color: rgb(170, 60, 50);
+    color: white;
+}
+
+.um-messages {
+    color: rgb(255, 170, 120);
+    white-space: normal;
+    margin-top: 6px;
+}
+
+.um-hidden {
+    display: none;
+}
+
+.um-bar {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.um-question {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.um-question__box {
+    padding: 16px;
+    border-radius: 6px;
+    background-color: rgb(40, 44, 54);
+}
+
+.um-question__buttons {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}

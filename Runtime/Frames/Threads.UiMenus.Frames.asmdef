@@ -1,0 +1,17 @@
+{
+    "name": "Threads.UiMenus.Frames",
+    "rootNamespace": "Threads.UiMenus",
+    "references": [
+        "Threads.UiMenus",
+        "Threads.UiFrames"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

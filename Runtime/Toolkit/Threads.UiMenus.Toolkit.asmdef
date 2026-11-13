@@ -1,0 +1,19 @@
+{
+    "name": "Threads.UiMenus.Toolkit",
+    "rootNamespace": "Threads.UiMenus.Toolkit",
+    "references": [
+        "Threads.UiMenus",
+        "Threads.UiMenus.Frames",
+        "Threads.UiFrames",
+        "Threads.UiFrames.Input"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
