@@ -1,0 +1,29 @@
+{
+  "name": "com.threads.uimenus",
+  "version": "0.0.1",
+  "displayName": "UI Menus",
+  "description": "Menus and settings screens generated from annotated C# fields, properties and methods, with Apply, Revert and Cancel per object and pluggable saving. Views for UI Toolkit and uGUI are built on UI Frames, so mouse, touch, keyboard and gamepad all work.",
+  "unity": "6000.3",
+  "author": {
+    "name": "Threads",
+    "url": "https://github.com/DavidWilliamHunter"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidWilliamHunter/UiMenus.git"
+  },
+  "documentationUrl": "https://github.com/DavidWilliamHunter/UiMenus/blob/main/README.md",
+  "changelogUrl": "https://github.com/DavidWilliamHunter/UiMenus/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/DavidWilliamHunter/UiMenus/blob/main/LICENSE.md",
+  "keywords": [
+    "ui",
+    "menu",
+    "settings",
+    "options"
+  ],
+  "dependencies": {
+    "com.unity.inputsystem": "1.20.0",
+    "com.threads.uiframes": "0.1.2"
+  }
+}

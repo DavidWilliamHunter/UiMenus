@@ -1,0 +1,16 @@
+{
+    "name": "Threads.UiMenus.Unity",
+    "rootNamespace": "Threads.UiMenus",
+    "references": [
+        "Threads.UiMenus"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
