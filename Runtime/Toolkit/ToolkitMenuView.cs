@@ -273,14 +273,14 @@ namespace Threads.UiMenus.Toolkit
                         var s = PointerOnly(new SliderInt((int)Math.Round(entry.Min ?? 0), (int)Math.Round(entry.Max ?? 10)));
                         s.RegisterValueChangedCallback(e => Edit(entry, e.newValue));
                         control.Add(s);
-                        ui.Show = v => { s.SetValueWithoutNotify(ToInt(v)); value.text = Format(entry, v); };
+                        ui.Show = v => { s.SetValueWithoutNotify(ToInt(v)); value.text = MenuText.Format(entry, v); };
                     }
                     else
                     {
                         var s = PointerOnly(new Slider((float)(entry.Min ?? 0), (float)(entry.Max ?? 1)));
                         s.RegisterValueChangedCallback(e => Edit(entry, e.newValue));
                         control.Add(s);
-                        ui.Show = v => { s.SetValueWithoutNotify(ToFloat(v)); value.text = Format(entry, v); };
+                        ui.Show = v => { s.SetValueWithoutNotify(ToFloat(v)); value.text = MenuText.Format(entry, v); };
                     }
                     control.Add(value);
                     break;
@@ -362,7 +362,7 @@ namespace Threads.UiMenus.Toolkit
                 {
                     var value = ValueLabel();
                     control.Add(value);
-                    ui.Show = v => value.text = Format(entry, v);
+                    ui.Show = v => value.text = MenuText.Format(entry, v);
                     break;
                 }
             }
@@ -385,19 +385,6 @@ namespace Threads.UiMenus.Toolkit
 
         static int ToInt(object v) => (int)Math.Round(Convert.ToDouble(v ?? 0, CultureInfo.InvariantCulture));
         static float ToFloat(object v) => (float)Convert.ToDouble(v ?? 0, CultureInfo.InvariantCulture);
-
-        /// <summary>A value as text, with its unit. A "%" unit on a 0–1 range shows as a percentage.</summary>
-        public static string Format(MenuEntry entry, object v)
-        {
-            if (v == null) return "";
-            if (v is float || v is double || v is decimal)
-            {
-                var d = Convert.ToDouble(v, CultureInfo.InvariantCulture);
-                if (entry.Unit == "%" && entry.Max.HasValue && entry.Max.Value <= 1d) d *= 100d;
-                return d.ToString("0.##", CultureInfo.CurrentCulture) + (entry.Unit ?? "");
-            }
-            return Convert.ToString(v, CultureInfo.CurrentCulture) + (entry.Unit == null || v is string ? "" : entry.Unit);
-        }
 
         Button BarButton(string name, string text, Action click)
         {

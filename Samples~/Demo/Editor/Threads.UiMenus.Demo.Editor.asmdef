@@ -1,0 +1,22 @@
+{
+    "name": "Threads.UiMenus.Demo.Editor",
+    "rootNamespace": "Threads.UiMenus.Demo.Editor",
+    "references": [
+        "Threads.UiMenus.Demo",
+        "Threads.UiFrames",
+        "Threads.UiFrames.Input",
+        "Unity.InputSystem",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

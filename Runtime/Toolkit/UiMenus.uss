@@ -102,6 +102,46 @@
     color: white;
 }
 
+/* Controls: dark fields and buttons with light text (the default theme's are light grey). */
+.um-menu Button {
+    background-color: rgb(52, 58, 72);
+    border-color: rgb(84, 92, 110);
+    color: rgb(230, 232, 238);
+}
+
+.um-menu Button:hover {
+    background-color: rgb(66, 74, 92);
+}
+
+.um-menu Button:active {
+    background-color: rgb(80, 140, 255);
+}
+
+.um-menu Button:disabled {
+    opacity: 0.4;
+}
+
+.um-menu .unity-base-text-field__input {
+    background-color: rgb(52, 58, 72);
+    border-color: rgb(84, 92, 110);
+    color: rgb(230, 232, 238);
+}
+
+.um-menu .unity-toggle__checkmark {
+    background-color: rgb(52, 58, 72);
+    border-color: rgb(110, 120, 140);
+    -unity-background-image-tint-color: rgb(110, 165, 255);
+}
+
+.um-menu .unity-label {
+    color: rgb(230, 232, 238);
+}
+
+.um-row__control > LongField,
+.um-row__control > DoubleField {
+    min-width: 90px;
+}
+
 .um-messages {
     color: rgb(255, 170, 120);
     white-space: normal;

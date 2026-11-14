@@ -172,3 +172,7 @@ This needs one small, backward-compatible addition to UI Frames. Today a cross-a
 - **The page:** a UI Menus frame kind, a vertical strip whose cards are rows. It handles Adjust (step the row) and Activate (toggle, press or link).
 - **Hidden rows:** rows hidden by ShowIf are removed from the content rather than set to `display: none`, so navigation never stops on them.
 - **The bar:** Apply, Revert and Cancel, plus the error and restart lines.
+
+## Change (2026-11-14): rebinding moved out
+
+Phase 6 (rebinding rows) was built as a prototype and then removed at the user's request: UI Menus takes input only through Input System actions, and rebinding is the Input System's job. A separate package, `com.threads.inputrebinding`, holds the brief (`BRIEF-Rebinding.md`) with what was learned. UI Menus keeps no rebinding hooks.

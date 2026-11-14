@@ -1,0 +1,21 @@
+{
+    "name": "Threads.UiMenus.UGUI",
+    "rootNamespace": "Threads.UiMenus.UGUI",
+    "references": [
+        "Threads.UiMenus",
+        "Threads.UiMenus.Frames",
+        "Threads.UiFrames",
+        "Threads.UiFrames.UGUI",
+        "Threads.UiFrames.Input",
+        "UnityEngine.UI"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
